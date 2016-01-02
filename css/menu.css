@@ -1,0 +1,157 @@
+.menu{
+    background-color: teal;
+}
+@font-face {
+ font-family: 'WebSymbols-Regular';
+ src: url('../WebSymbols-Regular.otf');
+ font-weight: normal;
+ font-style: normal;
+}
+.icon-igualdad{
+     margin: 5px 20px;
+    cursor:pointer;
+    color: white;
+}
+.icon-tito{
+    display:none;
+    font-family: 'WebSymbols-Regular',sans-serif;
+    height: 50px;
+    font-size: 30px;
+}
+.ca-icon{
+    display: none;
+}
+.icon-tito img{
+    margin: 5px 20px;
+/*
+    margin-left: 20px;
+    margin-top: 5px;
+*/
+    height: 35px;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    width: 50px;
+    cursor: pointer;
+}
+.menu2 ul{
+    float: left;
+    background: teal;
+    opacity: 0.7;
+    display: flex;
+    list-style: none;
+}
+.menu2 a{
+    font-family:'Eurostile-Bold', sans-serif;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+.menu2 a:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+@media (max-width:800px) {
+    #menu-bar {
+        display: none;
+    }
+
+    .ca-icon {
+        display: block;
+    }
+
+    .icon-tito {
+        display: block;
+        color: white;
+        margin: 5px 20px;
+    }
+
+    .icon-tito {
+        display: block;
+        color: white;
+    }
+
+    header label {
+        float: right;
+        font-size: 28px;
+        margin: 6px 0;
+    }
+
+    .menu2 {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        margin-left: -40px;
+        margin-top: 12px;
+        width: 300px;
+        height: 40vh;
+        background: transparent;
+        transition: all 0.3s;
+        transform: translateX(-100%);
+        z-index: 200;
+    }
+
+    .ca-icon {
+        margin-left: 20px;
+        font-family: 'WebSymbols-Regular', cursive;
+        font-size: 20px;
+        text-shadow: 0px 0px 1px #333;
+        line-height: 50px;
+        position: absolute;
+        width: 90px;
+        left: 20px;
+        text-align: center;
+        transition: all 300ms linear;
+    }
+
+    .menu li {
+        height: 60px;
+        border-left: 10px solid white;
+        margin-bottom: 2px;
+    }
+
+    .menu2 li:hover {
+        border-color: teal;
+        background: white;
+        transition: all 300ms ease-in-out;
+    }
+
+    .menu2 ul {
+        flex-direction: column;
+        float: none;
+    }
+
+    .menu li:hover .ca-icon {
+        color: teal;
+        font-size: 50px;
+    }
+
+    .menu li:hover a {
+        font-size: 25px;
+        color: black;
+    }
+
+    .menu2 a {
+        margin-left: 10%;
+        font-family: 'Segoe UI', sans-serif;
+        display: block;
+        color: #fff;
+        height: 50px;
+        text-decoration: none;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .menu2 a:hover {
+        background: rgba(255, 255, 255, 0.3);
+        color: #000;
+        transition: all 300ms ease-in-out;
+    }
+
+    #menu-bar:checked ~ .menu2 {
+        transform: translateX(0%);
+    }
+}

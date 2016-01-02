@@ -1,0 +1,78 @@
+
+.areas{
+    margin-top: 1em;
+    width: 95%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.areas-title{
+    text-align: center;
+    width: 100%;
+    /*background-color: red;*/
+    margin-bottom:50px;
+    font-weight:300;
+    font-size:2.3em;
+    border-bottom:1px dashed teal;
+    padding-top: 70px;
+}
+.area{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+    background-color: #eee;
+    /*background-color: red;*/
+}
+.area-icon{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 2em;
+    color:#c0c0c0;
+}
+.area__title{
+    text-align: center;
+    padding: 5px;
+    /*border-bottom:1px dashed teal;*/
+    font-size:1.5em;
+}
+.area__content{
+    padding: 20px;
+}
+.area__content{
+    text-align: justify;
+}
+
+.area:hover{
+    background: rgba(0,100,100,.7);
+    transition: all 300ms ease-in-out;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 480px ){
+    .areas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .area{
+        width: 48%;
+        margin: 0 0 1em;
+        
+    }
+
+}
+@media screen and (min-width: 768px ){
+    .areas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .area{
+        width: 31.333%;
+        margin: 0 0 1em;
+        
+    }
+
+}
+/*animaciones hover*/

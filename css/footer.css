@@ -1,0 +1,16 @@
+.main-footer{
+    background-color: #222;
+    text-align: center;
+}
+.footer-social{
+    line-height: 3;
+}
+.footer-icon{
+    font-size:1.2em;
+    color:#c0c0c0;
+    letter-spacing: 20px;
+}
+.footer__content{
+    color:#c0c0c0;
+    padding-bottom: 20px;
+}

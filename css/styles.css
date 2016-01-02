@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(header.css);
+@import url(menu.css);
+@import url(banner.css);
+@import url(areas.css);
+@import url(contacts.css);
+@import url(team.css);
+@import url(values.css);
+@import url(footer.css);
+@import url(menufixed.css);
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    font-weight:300;
+    margin: 0;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width:100%;
+}
