@@ -78,15 +78,6 @@
         height: 350px;
     }
 
-    [class^=value-row1__item]{
-        background: red;
-    }
-    [class^=value-row2__item]{
-        background: red;
-    }
-    [class^=value-row3__item]{
-        background: red;
-    }
 }
 
 /*animaciones hover*/
